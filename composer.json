@@ -1,0 +1,33 @@
+{
+  "name": "marcosdsanchez/scratch",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Marcos Sánchez",
+      "email": "mail@marcosdsanchez.com.ar"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "php-di/php-di": "^6.0",
+    "zendframework/zend-diactoros": "^2.2",
+    "middlewares/fast-route": "^2.0",
+    "middlewares/request-handler": "^2.0",
+    "middlewares/whoops": "^2.0",
+    "symfony/templating": "^5.0",
+    "marcosdsanchez/mustache-templating-engine": "dev-master",
+    "zendframework/zend-httphandlerrunner": "^1.1",
+    "relay/relay": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scratch\\": "src/Scratch/"
+    }
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t public/"
+  },
+  "config": {
+    "process-timeout": 0
+  }
+}
